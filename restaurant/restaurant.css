@@ -6,12 +6,17 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: 'Poppins';
     background-color: rgb(254, 131, 49);
     padding-bottom: 10rem;
+}
+
+.mobile-header {
+    display: none;
 }
 
 .top {
@@ -209,16 +214,18 @@ a:hover {
     margin: 2rem auto;
     text-align: center;
     font-size: 2.5rem;
-    padding: 3rem 7rem 3rem;
+    padding: 3rem 7rem 0;
 }
 
 .combo-offers-content h2 {
-    height: 15rem;
+    height: 10rem;
     color: rgb(254, 131, 49);
 }
 
 .combo-offers-content h3 {
     font-size: 3rem;
+    height: 10rem;
+    margin-bottom: 3rem;
 }
 
 .combo-offers-item:hover .combo-offers-images img{
@@ -356,6 +363,20 @@ select {
         font-size: 35%;
     }
 
+    .mobile-header {
+        display: block;
+        color: white;
+        text-shadow: .3rem .3rem rgb(252, 38, 38);
+        font-size: 3rem;
+        font-weight: 900;
+        margin-top: 2rem;
+    }
+
+    .top {
+        background-color: rgba(255, 255, 255, 0.5);
+        backdrop-filter: blur(5px);
+    }
+
     .top-picks-container, .combo-offers-container, .locations-container {
         grid-template-columns: 1fr;
         margin: 0 auto;
@@ -380,17 +401,25 @@ select {
     }
 
     .combo-offers-content h2 {
-        height: 25rem;
+        height: 15rem;
         color: rgb(254, 131, 49);
+    }
+
+    .combo-offers-content h3 {
+        height: 15rem;
     }
 
     .top-picks-container .item {
         opacity: 1;
     }
 
+    .place-order-container {
+        padding: 5rem;
+    }
+
     .place-order-container button {
-        width: 65%;
-        margin-left: 17%;
+        width: 70%;
+        margin-left: 15%;
     }
 
     .locations-container {
@@ -414,7 +443,7 @@ select {
         display: flex;
         flex-direction: column;
         position: absolute;
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 1);
         padding: 3rem;
         padding-right: 8rem;
         right: 1rem;
@@ -432,14 +461,15 @@ select {
     }
 
     .show .hamburger-logo {
-        display: none;
+        opacity: 0;
+        transition: 0s;
     }
 
     .hamburger-logo {
         font-size: 5rem;
         text-decoration: none;
         margin-right: 4rem;
-        color: black;
+        color: white;
     }
 
     .cross {
@@ -453,6 +483,10 @@ select {
         right: 6.5rem;
         top: 5rem;
         cursor: pointer;
+        background-color: rgb(255, 159, 94);
+        border-radius: 50%;
+        padding: 0 1.2rem;
+        color: white;
     }
 
 }
