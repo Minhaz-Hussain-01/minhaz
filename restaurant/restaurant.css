@@ -367,9 +367,9 @@ select {
     .mobile-header {
         display: block;
         color: rgb(255, 159, 94);
-        text-shadow: .3rem .3rem rgb(252, 38, 38);
+        text-shadow: .2rem .2rem rgb(252, 38, 38);
         font-size: 3rem;
-        font-weight: 900;
+        font-weight: 700;
         margin-top: 2rem;
     }
 
