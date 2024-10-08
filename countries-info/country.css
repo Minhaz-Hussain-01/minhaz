@@ -87,16 +87,16 @@ body.dark {
     font-size: 2.5rem;
 }
 
-.back-button a{
+.back-button button{
+    cursor: pointer;
     font-weight: 600;
     color: var(--text-color);
     background-color: var(--background-color);
-    text-decoration: none;
     border: none;
     border-radius: .5rem;
     box-shadow: 0 0 .5rem rgb(30, 30, 30);
     font-size: 1.5rem;
-    padding: .5rem 1.5rem;
+    padding: 0rem 1.5rem 1rem 1.5rem;
 }
 
 .card-container {
@@ -210,8 +210,8 @@ body.dark {
         font-size: 40%;
     }
 
-    .back-button a{
-        padding: 1.5rem 3rem;
+    .back-button button{
+        padding: 1rem 3rem 1.5rem 3rem;
     }
 
     .card-content-main {
